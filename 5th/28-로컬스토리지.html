@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="item">이봉주</p>
+    <button id="set">SET</button>
+    <button id="get">GET</button>
+    <button id="remove">REMOVE</button>
+    <button id="clear">CLEAR</button>
+
+
+
+    <script>
+
+        const item = document.getElementById("item")
+        document.getelementbyid("set").addeventlistener("click", function(){
+            localStorage.setItem("마라토너", item.textContent)
+        })
+        
+        document.getelementbyid("get").addeventlistener("click", function(){
+            alert(localStorage.setItem("마라토너", item.textContent))
+        })
+    </script>
+</body>
+</html> 
